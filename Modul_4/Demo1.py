@@ -20,7 +20,7 @@ def combined_transform(*func_list):
 @combined_transform
 def translate(p): #pergeseran
     x, y = p
-    return point(x + 9, y + 9)
+    return point(x + 9, y + 3)
 
 @combined_transform
 def rotate(p): #rotasi
@@ -32,7 +32,7 @@ def rotate(p): #rotasi
 @combined_transform
 def scale(p): #dilatasi
     x, y = p
-    return point(x * 9, y * 0)  # Mengubah faktor skala y menjadi 9
+    return point(x * 0, y * 3)
 
 # Input titik dari pengguna
 x_input = float(input("Masukkan nilai x untuk titik A: "))
